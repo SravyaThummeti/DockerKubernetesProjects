@@ -1,0 +1,8 @@
+# Dockerfile.python
+FROM python:3.11.4
+
+WORKDIR /python-app
+
+COPY bmi.py ./
+
+CMD ["python", "bmi.py"]
